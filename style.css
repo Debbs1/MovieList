@@ -1,0 +1,103 @@
+/*preloader*/
+.spinner{
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: debby 1s infinite;
+/*animation: spin 2s linear infinite;*/
+}
+
+@keyframes debby {
+  0% { border: 16px solid #ff0; }
+  100% { border: 16px solid #000000; }
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ff6347;
+z-index: 999999;
+}
+/*#card-pic{
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+}*/
+header{
+  width: 100%;
+  height: 64px;
+  background: rgb(38, 39, 38);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ccc;
+}
+a{
+  text-decoration: none;
+  color: none;
+}
+header a {
+  text-decoration: none;
+}
+header form{
+  display: flex;
+  align-items: center;
+}
+#search{
+  width: 230px;
+  height: 30px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 20px;
+  padding: 18px;
+}
+.card-body{
+	line-height: 1 !important;
+}
+.rating{
+	padding-top: 1px !important;
+	padding-bottom: 1px !important;
+	line-height: 1px !important;
+}
+.entire-body{
+	background-position: relative !important;
+}
+.button-body{
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	margin:0 !important;
+}
+
+.rating-small{
+	font-size: 12px;
+}

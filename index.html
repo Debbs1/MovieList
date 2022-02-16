@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movies</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+</head>
+<body>
+    <header class="d-flex justify-content-between">
+        <a href="index.html"><h1 class="display-6 text-success ml-4">MovieList</h1></a>
+
+        <form id="form" class="mr-4">
+            <input
+                type="text"
+                id="search"
+                placeholder="Search by movie title"
+                class="search"
+            />
+        </form>
+	</header>
+	<div class="spinner"></div>
+    <div class="alert alert-info">
+        <strong>Info!</strong> You are currently offline.
+    </div>
+
+<div class="container d-none">
+	
+	<div id="movie-container"class="row d-flex justify-content-center my-3">
+		<p class="text-center">Discover the <strong>new</strong>, most popular movies available now! Across theaters, streaming, and on-demand, these are the movies that cinema lovers are embracing at this very moment. Bookmark this page to stay on top with our latest updates to the charts.  </p>  
+  	</div>
+ </div>
+ <script src="request.js"></script>
+ <script>
+
+</script>
+</body>
+
+</html>
